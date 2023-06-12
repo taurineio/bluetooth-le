@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["es2015"],
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "types": ["@types"],
+      "taurine-bluetooth-le-api": ["./webview-src"]
+    },
+  }
+}
