@@ -11,7 +11,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.0.0-alpha.4",
+    "@tauri-apps/api": "^2.0.0-alpha.5",
     "@tauri-apps/plugin-window": "^2.0.0-alpha.0",
     "@tauri-apps/plugin-shell": "^2.0.0-alpha.0",
     "taurine-bluetooth-le-api": "link:../../"
@@ -26,7 +26,7 @@
     "tslib": "^2.4.1",
     "typescript": "^4.9.5",
     "vite": "^4.2.1",
-    "@tauri-apps/cli": "^2.0.0-alpha.9",
+    "@tauri-apps/cli": "^2.0.0-alpha.10",
     "internal-ip": "^7.0.0"
   }
 }

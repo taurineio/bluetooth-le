@@ -22,7 +22,8 @@ pub fn init<R: Runtime, C: DeserializeOwned>(
 ) -> crate::Result<TaurineBluetoothLE<R>> {
     #[cfg(target_os = "android")]
     {
-        create_runtime()?;
+        // create_runtime()?;
+        // setup_class_loader()?;
         let handle = api.register_android_plugin(PLUGIN_IDENTIFIER, "TaurineBluetoothLEPlugin")?;
         Ok(TaurineBluetoothLE(handle))
     }

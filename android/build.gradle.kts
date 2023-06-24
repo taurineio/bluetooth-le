@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "io.taurine.bluetooth_le.plugin"
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 21
@@ -42,6 +42,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation(project(":tauri-android"))
-    implementation(files("./jni-utils-0.1.0-SNAPSHOT.jar"))
-    implementation(files("./droidplug.aar"))
+    implementation("io.github.astonbitecode:j4rs:0.16.1")
+    implementation(files("../../../3rdparty/btleplug/droidplug-debug.aar"))
 }

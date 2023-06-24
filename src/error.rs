@@ -9,9 +9,6 @@ pub enum Error {
     #[cfg(mobile)]
     #[error(transparent)]
     PluginInvoke(#[from] tauri::plugin::mobile::PluginInvokeError),
-    #[cfg(target_os = "android")]
-    #[error(transparent)]
-    AndroidInit(#[from] crate::android::AndroidInitError),
     #[error(transparent)]
     BluetoothLE(#[from] crate::bluetoothle::BluetoothLEError),
 }
